@@ -32,4 +32,4 @@ if [ "$1" = 'dockerd' ]; then
 	sleep 3
 fi
 
-exec "$@"
+exec "$DOCKER_OPTS $@"
